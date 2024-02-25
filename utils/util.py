@@ -70,7 +70,7 @@ class CSVFile:
 
     def init_csv_file(self):
         # 检查文件是否存在
-        if not os.path.exists(self.csv_url):
+        if not os.path.exists(self.csv_url) or os.path.getsize(self.csv_url) == 0:
             # 创建文件并写入表头
             with open(self.csv_url, mode='w', newline='') as file:
                 writer = csv.writer(file)

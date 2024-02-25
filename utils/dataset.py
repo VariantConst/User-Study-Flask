@@ -24,7 +24,7 @@ class dat():
         self.suffix = ['', '', '', '', '', '', '_cfg_9.00*']
         self.upload_folder = upload_folder
         self.style_list = sorted(os.listdir(
-            os.path.join(upload_folder, 'PhotoWCT')))[10:]
+            os.path.join(upload_folder, 'PhotoWCT')))
         self.filename_comb_cache = dict()
         for name in self.style_list:
             self.filename_comb_cache[name] = list(
