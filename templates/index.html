@@ -7,10 +7,15 @@
         body {
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 确保flex子元素在交叉轴上居中 */
             background-color: #ccc;
             background-size: cover;
             font-family: Arial, sans-serif;
+            width: 100%; /* 使用100%而不是90%，除非有特定的设计需求 */
         }
+
 
         h1, h2, h3 {
             text-align: center;
@@ -20,7 +25,9 @@
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* 居中显示 */
+            justify-content: center; /* 保持居中显示 */
+            margin: 0 auto; /* 添加这一行来实现水平居中 */
+            max-width: 90%; /* 或者你希望的任何最大宽度 */
         }
 
         .image-container {
