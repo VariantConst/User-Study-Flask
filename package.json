@@ -1,0 +1,12 @@
+{
+  "name": "user-study-2024",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react-router-dom": "^6.22.1"
+  },
+  "devDependencies": {
+    "create-react-app": "^5.0.1"
+  }
+}
