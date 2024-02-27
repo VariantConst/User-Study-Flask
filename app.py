@@ -42,7 +42,7 @@ def index():
 
     description = f'best preserves the contents while transferring the \
             photographic concepts. </br>Please focus on the \
-            <span class="colorful-text">{pid2concept}</span>'
+            <span class="colorful-text">{pid2concept}</span> (if none, focus on the general performance)'
     return render_template('index.html', 
                            image_urls=image_urls, 
                            pid2concept=pid2concept, 
